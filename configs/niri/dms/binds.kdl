@@ -1,74 +1,30 @@
 binds {
+    Alt+C hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Alt+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Alt+R hotkey-overlay-title="Rename Workspace" { spawn "dms" "ipc" "call" "workspace-rename" "open"; }
+    Alt+S hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
+    Alt+T hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
+    Alt+W hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dankdash" "wallpaper"; }
+    Ctrl+XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "decrement" "5"; }
+    Ctrl+XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "increment" "5"; }
+    Mod+Space hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Super+Ctrl+Shift+F1 hotkey-overlay-title="Volume Up (5%)" { spawn "dms" "ipc" "call" "audio" "increment" "5"; }
     Super+Ctrl+Shift+F2 hotkey-overlay-title="Volume Down (5%)" { spawn "dms" "ipc" "call" "audio" "decrement" "5"; }
     Super+Ctrl+Shift+F3 hotkey-overlay-title="Volume Mute Toggle" { spawn "dms" "ipc" "call" "audio" "mute"; }
     Super+Ctrl+Shift+F7 allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "playPause"; }
     Super+Ctrl+Shift+F8 allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "previous"; }
     Super+Ctrl+Shift+F9 allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "next"; }
+    Super+N hotkey-overlay-title="Open Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "5"; }
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "5"; }
-    Ctrl+XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "decrement" "5"; }   
-    Ctrl+XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "increment" "5"; }
+    XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
     XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
     XF86AudioNext allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "next"; }
     XF86AudioPlay allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "playPause"; }
     XF86AudioPrev allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "previous"; }
-    XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "5"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
-
-    Mod+Tab repeat=false { toggle-overview; }
-    Mod+Space hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-    Super+F6 hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "spotify-launcher"; }
-    Super+B hotkey-overlay-title="Open Browser" { spawn "sh" "-c" "brave"; }
-    Super+F hotkey-overlay-title="Open Thunar" { spawn "sh" "-c" "Thunar"; }
-    Super+S hotkey-overlay-title="Open Signal" { spawn "sh" "-c" "signal-desktop"; }
-    Super+N hotkey-overlay-title="Open Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-
-    Alt+Slash { show-hotkey-overlay; }
-    Mod+Ctrl+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-    Alt+C hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
-    Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
-    Alt+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-    Alt+P hotkey-overlay-title="Power Menu: Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
-    Alt+S hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
-    Alt+T hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
-    Alt+W hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dankdash" "wallpaper"; }
-    Alt+R hotkey-overlay-title="Rename Workspace" { spawn "dms" "ipc" "call" "workspace-rename" "open"; }
-    Alt+X repeat=false { close-window; }
-    Alt+Q { quit; }
-    
-    Super+Ctrl+M { focus-workspace "Media"; }                              
-    Super+Ctrl+C { focus-workspace "Communication"; }
-    Super+Ctrl+G { focus-workspace "General"; }
-    Super+Ctrl+1 { focus-workspace 1; }
-    Super+Ctrl+2 { focus-workspace 2; }
-    Super+Ctrl+3 { focus-workspace 3; }
-    Super+Ctrl+4 { focus-workspace 4; }
-    Super+Ctrl+5 { focus-workspace 5; }
-    Super+Ctrl+6 { focus-workspace 6; }
-    Super+Ctrl+7 { focus-workspace 7; }
-    Super+Ctrl+8 { focus-workspace 8; }
-    Super+Ctrl+9 { focus-workspace 9; }
-    Super+Ctrl+Left { focus-column-left; }
-    Super+Ctrl+Down { focus-workspace-down; }
-    Super+Ctrl+Up { focus-workspace-up; }
-    Super+Ctrl+Right { focus-column-right; }
-    Super+Ctrl+H { focus-column-left; }
-    Super+Ctrl+J { focus-workspace-down; }
-    Super+Ctrl+K { focus-workspace-up; }
-    Super+Ctrl+L { focus-column-right; }
-    Super+Ctrl+WheelScrollLeft { focus-column-left; }
-    Super+Ctrl+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
-    Super+Ctrl+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
-    Super+Ctrl+WheelScrollRight { focus-column-right; }
-    Super+Ctrl+Page_Down { focus-window-down; }
-    Super+Ctrl+Page_Up { focus-window-up; }
-    Super+Ctrl+Home { focus-column-first; }   
-    Super+Ctrl+End { focus-column-last; }
-    Super+U {focus-window-previous; }
-    
     Mod+Shift+1 { move-column-to-workspace 1; }
     Mod+Shift+2 { move-column-to-workspace 2; }
     Mod+Shift+3 { move-column-to-workspace 3; }
@@ -78,54 +34,88 @@ binds {
     Mod+Shift+7 { move-column-to-workspace 7; }
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
-    Mod+Shift+H { move-column-left; }
-    Super+Shift+J { move-column-to-workspace-down; }
-    Super+Shift+K { move-column-to-workspace-up; }
-    Mod+Shift+L { move-column-right; }
-    Mod+Shift+Left { move-column-left; }
-    Super+Shift+Down { move-column-to-workspace-down; }
-    Super+Shift+Up { move-column-to-workspace-up; }
-    Mod+Shift+Right { move-column-right; }
-    Super+Shift+WheelScrollLeft { move-column-left; }
-    Super+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
-    Super+Shift+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
-    Super+Shift+WheelScrollRight { move-column-right; }
-    Super+Shift+Home { move-column-to-first; }
-    Super+Shift+End { move-column-to-last; }
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up { move-workspace-up; }
-    
+    Super+Ctrl+1 { focus-workspace 1; }
+    Super+Ctrl+2 { focus-workspace 2; }
+    Super+Ctrl+3 { focus-workspace 3; }
+    Super+Ctrl+4 { focus-workspace 4; }
+    Super+Ctrl+5 { focus-workspace 5; }
+    Super+Ctrl+6 { focus-workspace 6; }
+    Super+Ctrl+7 { focus-workspace 7; }
+    Super+Ctrl+8 { focus-workspace 8; }
+    Super+Ctrl+9 { focus-workspace 9; }
+    Super+Ctrl+C { focus-workspace "Communication"; }
+    Super+Ctrl+Down { focus-workspace-down; }
+    Super+Ctrl+G { focus-workspace "General"; }
+    Super+Ctrl+J { focus-workspace-down; }
+    Super+Ctrl+K { focus-workspace-up; }
+    Super+Ctrl+M { focus-workspace "Media"; }
+    Super+Ctrl+Up { focus-workspace-up; }
+    Super+Ctrl+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+    Super+Ctrl+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
+    Super+Shift+Down { move-column-to-workspace-down; }
+    Super+Shift+J { move-column-to-workspace-down; }
+    Super+Shift+K { move-column-to-workspace-up; }
+    Super+Shift+Up { move-column-to-workspace-up; }
+    Super+Shift+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Super+Shift+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
+    Alt+X repeat=false { close-window; }
+    Mod+Ctrl+F { maximize-column; }
+    Mod+Ctrl+Shift+C { center-column; }
+    Mod+Ctrl+Shift+Down { move-window-down; }
+    Mod+Ctrl+Shift+F { toggle-window-floating; }
     Mod+Ctrl+Shift+H { consume-or-expel-window-left; }
     Mod+Ctrl+Shift+L { consume-or-expel-window-right; }
     Mod+Ctrl+Shift+Left { consume-or-expel-window-left; }
+    Mod+Ctrl+Shift+M { switch-focus-between-floating-and-tiling; }
     Mod+Ctrl+Shift+Right { consume-or-expel-window-right; }
+    Mod+Ctrl+Shift+T { toggle-column-tabbed-display; }
     Mod+Ctrl+Shift+Up { move-window-up; }
-    Mod+Ctrl+Shift+Down { move-window-down; }
-
-    Mod+Ctrl+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
-
-    Super+Ctrl+Equal { set-column-width "+10%"; }
-    Super+Ctrl+Minus { set-column-width "-10%"; }
-    Super+Ctrl+R { switch-preset-column-width; }
-    Super+Ctrl+Backspace { set-column-width "50%"; }
-    Super+Ctrl+Return { expand-column-to-available-width; }
-
+    Mod+Ctrl+Shift+V { center-visible-columns; }
     Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Shift+F { fullscreen-window; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+L { move-column-right; }
+    Mod+Shift+Left { move-column-left; }
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+R { switch-preset-window-height; }
-    Super+Shift+Backspace { reset-window-height; }
-
-    Mod+Ctrl+Shift+C { center-column; }
-    Mod+Ctrl+Shift+V { center-visible-columns; }
-    Mod+Ctrl+Shift+M { switch-focus-between-floating-and-tiling; }
-    Mod+Ctrl+Shift+F { toggle-window-floating; }
-    Mod+Ctrl+Shift+T { toggle-column-tabbed-display; }
-
-    Super+Shift+Print { screenshot; }
-    Super+Shift+XF86Launch1 { screenshot; }
+    Mod+Shift+Right { move-column-right; }
+    Super+Ctrl+Backspace { set-column-width "50%"; }
+    Super+Ctrl+End { focus-column-last; }
+    Super+Ctrl+Equal { set-column-width "+10%"; }
+    Super+Ctrl+H { focus-column-left; }
+    Super+Ctrl+Home { focus-column-first; }
+    Super+Ctrl+L { focus-column-right; }
+    Super+Ctrl+Left { focus-column-left; }
+    Super+Ctrl+Minus { set-column-width "-10%"; }
+    Super+Ctrl+Page_Down { focus-window-down; }
+    Super+Ctrl+Page_Up { focus-window-up; }
+    Super+Ctrl+R { switch-preset-column-width; }
+    Super+Ctrl+Return { expand-column-to-available-width; }
+    Super+Ctrl+Right { focus-column-right; }
     Super+Ctrl+Shift+Print { screenshot-window; }
     Super+Ctrl+Shift+XF86Launch1 { screenshot-window; }
+    Super+Ctrl+WheelScrollLeft { focus-column-left; }
+    Super+Ctrl+WheelScrollRight { focus-column-right; }
+    Super+Shift+Backspace { reset-window-height; }
+    Super+Shift+End { move-column-to-last; }
+    Super+Shift+Home { move-column-to-first; }
+    Super+Shift+WheelScrollLeft { move-column-left; }
+    Super+Shift+WheelScrollRight { move-column-right; }
+    Super+U { focus-window-previous; }
     Super+Ctrl+Print { screenshot-screen; }
     Super+Ctrl+XF86Launch1 { screenshot-screen; }
+    Super+Shift+Print { screenshot; }
+    Super+Shift+XF86Launch1 { screenshot; }
+    Alt+Q { quit; }
+    Alt+P hotkey-overlay-title="Open ROG Control Centre" { spawn "rog-control-center"; }
+    Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+    Super+B hotkey-overlay-title="Open Browser" { spawn "sh" "-c" "brave"; }
+    Super+F hotkey-overlay-title="Open Thunar" { spawn "sh" "-c" "Thunar"; }
+    Super+F6 hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "spotify-launcher"; }
+    Super+S hotkey-overlay-title="Open Signal" { spawn "sh" "-c" "signal-desktop"; }
+    Alt+Slash { show-hotkey-overlay; }
+    Mod+Ctrl+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    Mod+Tab repeat=false { toggle-overview; }
 }
