@@ -58,9 +58,9 @@ alias gc='git commit'
 alias gps='git push'
 alias gpl='git pull'
 alias gitdir='cd ~/Documents/git'
-alias dotfiles='cd ~/Documents/git/fphchen/dotfiles'
-alias wallpapers='cd ~/Documents/git/fphchen/wallpapers'
-alias installers='cd ~/Documents/git/fphchen/installers'
+alias dotfiles='cd ~/Documents/git/phfchen/dotfiles'
+alias wallpapers='cd ~/Documents/git/phfchen/wallpapers'
+alias installers='cd ~/Documents/git/phfchen/installers'
 
 # 2026 Calendar Alias
 alias jan='cal -m 01 2026'
