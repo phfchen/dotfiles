@@ -83,12 +83,13 @@ input {
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
-/-output "eDP-1" {
-    mode "2560x1600@120.00"
-    position x=2560 y=0
-    scale 1.50
-    variable-refresh-rate on-demand=true
-}
+//-output "eDP-1" {
+//    mode "2560x1600@120.00"
+//    position x=2560 y=0
+//    scale 1.50
+//    variable-refresh-rate on-demand=true
+//}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
