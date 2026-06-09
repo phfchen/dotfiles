@@ -4,7 +4,7 @@
         // ! PLACE YOUR CUSTOM CONFIGURATION ELSEWHERE !
 
         layout {
-        gaps 4
+        gaps 20
 
         border {
         width 2

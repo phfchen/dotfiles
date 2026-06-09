@@ -22,5 +22,6 @@ window-rule {
 // Window rules to open specific apps in floating
 window-rule {
     match app-id=r#"^brave-nngceckbapebfimnlniiiahkandclblb-Default$"#
+    match app-id=r#"(?i)^thunar$"# title="^Rename"
     open-floating true
 }
