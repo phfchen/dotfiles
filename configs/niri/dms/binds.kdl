@@ -112,9 +112,9 @@ binds {
     Alt+Q { quit; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Super+B hotkey-overlay-title="Open Browser" { spawn "sh" "-c" "brave"; }
+    Super+C hotkey-overlay-title="Open Signal" { spawn "sh" "-c" "signal-desktop"; }
     Super+F hotkey-overlay-title="Open Thunar" { spawn "sh" "-c" "Thunar"; }
-    Super+F6 hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "spotify-launcher"; }
-    Super+S hotkey-overlay-title="Open Signal" { spawn "sh" "-c" "signal-desktop"; }
+    Super+M hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "spotify-launcher"; }
     XF86Launch1 hotkey-overlay-title="Open Spotify" { spawn "sh" "-c" "spotify-launcher"; }
     XF86Launch3 hotkey-overlay-title="Open ROG Control Centre" { spawn "rog-control-center"; }
     Alt+Slash { show-hotkey-overlay; }
