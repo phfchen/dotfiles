@@ -1,10 +1,10 @@
 #!/bin/bash
-WALLPAPERSDIR="$HOME/Pictures/Wallpapers"
-GITWALLPAPERS="$HOME/Documents/git/phfchen/wallpapers/"
+WALLPAPERDIR="$HOME/Pictures/Wallpapers"
+GITWALLPAPERDIR="$HOME/Documents/git/phfchen/wallpapers/"
 
-mkdir -p "$WALLPAPERSDIR"
-rm -f "$WALLPAPERSDIR"/*
-cd "$GITWALLPAPERS"
-find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -exec ln -s "$(realpath {})" "$WALLPAPERSDIR"/ \;
+mkdir -p "$WALLPAPERDIR"
+rm -f "$GITWALLPAPERDIR"/*
+cd "$GITWALLPAPERDIR"
+find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -exec ln -s "$(realpath {})" "$WALLPAPERDIR"/ \;
 
-notify-send "Wallpapers Updated" "$(ls "$WALLPAPERSDIR" | wc -l) images"
+notify-send "Wallpapers Updated" "$(ls "$WALLPAPERDIR" | wc -l) images"
