@@ -23,5 +23,6 @@ window-rule {
 window-rule {
     match app-id=r#"^brave-nngceckbapebfimnlniiiahkandclblb-Default$"#
     match app-id=r#"(?i)^thunar$"# title="^Rename"
+    match app-id=r#"(?i)^thunar$"# title="^File Operation Progress"
     open-floating true
 }
