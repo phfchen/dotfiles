@@ -14,6 +14,14 @@ output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
      variable-refresh-rate on-demand=true
 }
 
+// Monitor for ArchLinuxOS2
+output "Ancor Communications Inc ASUS VG278HR C7LMTF100765" {
+    mode "1920x1080@60.00"
+    position x=1920 y=0
+    scale 1.00
+    variable-refresh-rate on-demand=true
+}
+
 // Monitor for NixOS-AcerSF314
 output "AU Optronics 0xDA91 Unknown" {
     mode "1920x1080@60.00"
@@ -21,10 +29,3 @@ output "AU Optronics 0xDA91 Unknown" {
     scale 1.00
     variable-refresh-rate on-demand=true
 }
-
-
-
-
-
-
-
