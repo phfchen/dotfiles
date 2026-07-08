@@ -1,3 +1,17 @@
+ output "Pioneer Electronic Corporation VSX-1120 0x01010101" {
+    mode "2560x1440@60.00"
+    position x=2560 y=0
+    scale 1.00
+    variable-refresh-rate on-demand=true
+ }
+
+ output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
+     mode "2560x1600@120.00"
+     position x=2560 y=0
+     scale 1.50
+     variable-refresh-rate on-demand=true
+ }
+
  output "AU Optronics 0xDA91 Unknown" {
     mode "1920x1080@60.00"
     position x=1920 y=0
@@ -5,9 +19,9 @@
     variable-refresh-rate on-demand=true
  }
 
- output "eDP-1" {
-     mode "2560x1600@120.00"
-     position x=2560 y=0
-     scale 1.50
-     variable-refresh-rate on-demand=true
- }
+
+
+
+
+
+
