@@ -55,7 +55,7 @@ input {
         // off
         // natural-scroll
         accel-profile "flat"
-        accel-speed 0.5
+        accel-speed 0.8
         // scroll-method "no-scroll"
     }
 
