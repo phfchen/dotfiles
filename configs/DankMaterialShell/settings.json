@@ -566,11 +566,20 @@
     },
     "AU Optronics 0xDA91 Unknown": {
       "vrrOnDemand": true
+    },
+    "DP-2": {
+      "layout": null,
+      "focusAtStartup": false
+    },
+    "DP-3": {
+      "layout": null
     }
   },
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
-  "activeDisplayProfile": {},
+  "activeDisplayProfile": {
+    "niri": ""
+  },
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
   "displaySnapToEdge": true,

@@ -1,13 +1,17 @@
 // Defin fixed named workspaces.
-workspace "Media"
-workspace "Communication"
-workspace "General"
-
+workspace "Media" {
+    open-on-output "DP-2"
+}
+workspace "Communication" {
+    open-on-output "DP-3"
+}
+workspace "General" {
+    open-on-output "DP-3"
+}
 // Window rules to open specific apps maximized
 window-rule {
     match app-id=r#"(?i)^spotify$"#
     match app-id=r#"(?i)^vlc$"#
-    match app-id=r#"(?i)^org.mozilla.Thunderbird$"#
     open-maximized true
 }
 
