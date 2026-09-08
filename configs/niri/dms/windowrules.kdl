@@ -1,43 +1,34 @@
-// Defin fixed named workspaces.
-workspace "Media" {
-    open-on-output "DP-2"
-}
-workspace "Communication" {
-    open-on-output "DP-3"
-}
-workspace "General" {
-    open-on-output "DP-3"
-}
-// Window rules to open specific apps maximized
+// DMS Window Rules - Managed by DankMaterialShell
+// Do not edit manually - changes may be overwritten
+
+// @id=dms_rule_0 @name=
 window-rule {
-    match app-id=r#"(?i)^spotify$"#
-    match app-id=r#"(?i)^vlc$"#
+    match app-id="(?i)^spotify$"
+    match app-id="(?i)^vlc$"
     open-maximized true
 }
 
-// Window rules to open specific apps on specific workspaces
+// @id=dms_rule_1 @name=
 window-rule {
-    match app-id=r#"(?i)^spotify$"#
-    match app-id=r#"(?i)^vlc$"#
+    match app-id="(?i)^spotify$"
+    match app-id="(?i)^vlc$"
     open-on-workspace "Media"
 }
+
+// @id=dms_rule_2 @name=
 window-rule {
-    // Open Signal on "Communication" workspace
-    match app-id=r#"(?i)^signal$"#
-    // Open Line on "Communication" workspace
-    match app-id=r#"(?i)^brave-ophjlpahpchlmihnnnihgmmeilfjmjjc-Default$"#
-    // Open Thunderbird on "Communication" workspace
-    match app-id=r#"(?i)^org.mozilla.Thunderbird$"#
-    // Open Line on "Communication" workspace
+    match app-id="(?i)^signal$"
+    match app-id="(?i)^brave-ophjlpahpchlmihnnnihgmmeilfjmjjc-Default$"
+    match app-id="(?i)^org.mozilla.Thunderbird$"
     match title="(?i)^WhatsApp - Brave$"
     open-on-workspace "Communication"
 }
 
-// Window rules to open specific apps in floating
+// @id=dms_rule_3 @name=
 window-rule {
-    match app-id=r#"^brave-nngceckbapebfimnlniiiahkandclblb-Default$"#
-    match app-id=r#"(?i)^thunar$"# title="^Rename"
-    match app-id=r#"(?i)^thunar$"# title="^File Operation Progress"
+    match app-id="^brave-nngceckbapebfimnlniiiahkandclblb-Default$"
+    match app-id="(?i)^thunar$" title="^Rename"
+    match app-id="(?i)^thunar$" title="^File Operation Progress"
     open-floating true
 }
 

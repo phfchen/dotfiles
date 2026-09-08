@@ -1,0 +1,10 @@
+// Defin fixed named workspaces.
+workspace "Media" {
+    open-on-output "DP-2"
+}
+workspace "Communication" {
+    open-on-output "DP-3"
+}
+workspace "General" {
+    open-on-output "DP-3"
+}
