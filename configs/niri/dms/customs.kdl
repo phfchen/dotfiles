@@ -1,3 +1,5 @@
+
+// Monitor Outputs for Phaalan-ArchNiriDMS
 // Define fixed named workspaces.
 workspace "Media" {
     open-on-output "DP-2"
@@ -21,8 +23,30 @@ output "DP-3" {
     position x=2560 y=0
 }
 
+// Monitor Output for ArchNiriDMS-GA403UI
 output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
     mode "2880x1800@120.00"
     scale 1.5
     position x=0 y=0
+}
+
+// Monitor Output for ArchNiriDMS-GA605KM
+output "AAA" {
+    mode "2880x1800@120.00"
+    scale 1.5
+    position x=0 y=0
+}
+
+// Monitor Output for ArchNiriDMS2
+output "Ancor Communications Inc ASUS VG278HR C7LMTF100765" {
+    mode "1920x1080@60.00"
+    scale 1.00
+    position x=0 y=0
+}
+
+// Monitor Output for ArchNiriDMS-TP412FA 
+output "BBB" {
+    mode "1920x1080@60.00"
+    position x=0 y=0
+    scale 1.00
 }
