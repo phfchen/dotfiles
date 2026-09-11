@@ -1,0 +1,28 @@
+// Define fixed named workspaces.
+workspace "Media" {
+    open-on-output "DP-2"
+}
+workspace "Communication" {
+    open-on-output "DP-3"
+}
+workspace "General" {
+    open-on-output "DP-3"
+}
+
+output "DP-2" {
+    mode "2560x1440@143.998"
+    scale 1
+    position x=0 y=0
+}
+
+output "DP-3" {
+    mode "2560x1440@143.998"
+    scale 1
+    position x=2560 y=0
+}
+
+output "eDP-1" {
+    mode "2880x1800@120.00"
+    scale 1.25
+    position x=0 y=0
+}
