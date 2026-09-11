@@ -282,6 +282,6 @@ include "dms/windowbinds.kdl"
 include "dms/outputs.kdl"
 include "dms/cursor.kdl"
 include "dms/windowrules.kdl"
-include "dms/windowrules-custom.kdl"
+include "dms/customs.kdl"
 
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "General"
