@@ -21,8 +21,8 @@ output "DP-3" {
     position x=2560 y=0
 }
 
-output "eDP-1" {
+output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
     mode "2880x1800@120.00"
-    scale 1.25
+    scale 1.5
     position x=0 y=0
 }
