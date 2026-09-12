@@ -1,4 +1,3 @@
-
 // Monitor Outputs for Phaalan-ArchNiriDMS
 // Define fixed named workspaces.
 workspace "Media" {
