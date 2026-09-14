@@ -44,8 +44,8 @@ output "Ancor Communications Inc ASUS VG278HR C7LMTF100765" {
 }
 
 // Monitor Output for ArchNiriDMS-TP412FA 
-output "BBB" {
+output "AU Optronics 0x403D Unknown" {
     mode "1920x1080@60.00"
     position x=0 y=0
-    scale 1.00
+    scale 2.00
 }
