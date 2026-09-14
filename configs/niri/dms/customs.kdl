@@ -30,7 +30,7 @@ output "Samsung Display Corp. ATNA60DL04-0  Unknown" {
 }
 
 // Monitor Output for ArchNiriDMS-GA403UI
-output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
+output "Samsung Display Corp. ATNA40CU05-0  Unknown" {
     mode "2880x1800@120.00"
     scale 2.5
     position x=0 y=0
