@@ -30,9 +30,9 @@ output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
 }
 
 // Monitor Output for ArchNiriDMS-GA605KM
-output "AAA" {
-    mode "2880x1800@120.00"
-    scale 1.5
+output "Samsung Display Corp. ATNA60DL04-0 Unknown" {
+    mode "2560x1600@240.00"
+    scale 1.25
     position x=0 y=0
 }
 
