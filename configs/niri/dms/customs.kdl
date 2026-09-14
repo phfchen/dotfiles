@@ -23,16 +23,16 @@ output "Ancor Communications Inc ROG PG279Q #ASMdcvFHtgrd" {
 }
 
 // Monitor Output for ArchNiriDMS-GA605KM
-output "AAA" {
+output "Samsung Display Corp. ATNA60DL04-0  Unknown" {
     mode "2560x1600@240.00"
-    scale 2
+    scale 1.25
     position x=0 y=0
 }
 
 // Monitor Output for ArchNiriDMS-GA403UI
 output "Samsung Display Corp. ATNA40CU05-0 Unknown" {
     mode "2880x1800@120.00"
-    scale 1.5
+    scale 2.5
     position x=0 y=0
 }
 
