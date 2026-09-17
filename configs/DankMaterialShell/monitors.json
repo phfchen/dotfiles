@@ -6,7 +6,7 @@
       "name": "",
       "outputs": {
         "DP-2": {
-          "mode": "2560x1440@143.998",
+          "mode": "2560x1440@165.000",
           "position": {
             "x": 0,
             "y": 0
@@ -16,12 +16,13 @@
           "vrr": false,
           "disabled": false,
           "niri": {
-            "layout": null,
-            "focusAtStartup": false
+            "layout": {
+              "alwaysCenterSingleColumn": true
+            }
           }
         },
         "DP-3": {
-          "mode": "2560x1440@143.998",
+          "mode": "2560x1440@165.000",
           "position": {
             "x": 2560,
             "y": 0
@@ -31,7 +32,10 @@
           "vrr": false,
           "disabled": false,
           "niri": {
-            "layout": null
+            "layout": {
+              "alwaysCenterSingleColumn": true
+            },
+            "focusAtStartup": true
           }
         }
       }
