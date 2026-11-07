@@ -13,19 +13,19 @@ workspace "General" {
     //open-on-output "DP-3"
 }
 
-output "Ancor Communications Inc ROG PG279Q #ASMdcvFHtgrd" {
+//output "Ancor Communications Inc ROG PG279Q #ASMdcvFHtgrd" {
 //output "DP-2" {
-    mode "2560x1440@165.000"
-    scale 1
-    position x=2560 y=0
-}
+//    mode "2560x1440@165.000"
+//    scale 1
+//    position x=2560 y=0
+//}
 
-output "Ancor Communications Inc ROG PG279Q #ASP5kEKa67rd" {
+//output "Ancor Communications Inc ROG PG279Q #ASP5kEKa67rd" {
 //output "DP-3" {
-    mode "2560x1440@165.000"
-    scale 1
-    position x=0 y=0
-}
+//    mode "2560x1440@165.000"
+//    scale 1
+//    position x=0 y=0
+//}
 
 // Monitor Output for ArchNiriDMS-GA605KM
 output "Samsung Display Corp. ATNA60DL04-0  Unknown" {
@@ -48,7 +48,7 @@ output "Ancor Communications Inc ASUS VG278HR C7LMTF100765" {
     position x=0 y=0
 }
 
-// Monitor Output for ArchNiriDMS-TP412FA 
+//Monitor Output for ArchNiriDMS-TP412FA 
 output "AU Optronics 0x403D Unknown" {
     mode "1920x1080@60.00"
     position x=0 y=0
