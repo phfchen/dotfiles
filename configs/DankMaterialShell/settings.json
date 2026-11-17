@@ -110,6 +110,10 @@
         {
           "id": "clock",
           "enabled": true
+        },
+        {
+          "id": "network_speed_monitor",
+          "enabled": true
         }
       ],
       "spacing": 4,
@@ -182,6 +186,7 @@
       "showOnLastDisplay": true,
       "position": 3,
       "mode": "compact",
+      "middleClickAction": "close",
       "taskbarAlign": "center",
       "widgetExpansion": "popout",
       "iconSize": 40,
@@ -251,5 +256,6 @@
   "matugenScheme": "scheme-tonal-spot",
   "matugenContrast": 0,
   "displayProfileAutoSelect": false,
-  "displayNameMode": "system"
+  "displayNameMode": "system",
+  "notificationFocusedMonitor": false
 }
