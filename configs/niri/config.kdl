@@ -286,3 +286,4 @@ include "dms/customs.kdl"
 
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "General"
 spawn-at-startup "fcitx5" "-d"
+spawn-at-startup "sh" "-c" "sleep 3 && dms ipc call lock lock"

@@ -257,5 +257,6 @@
   "matugenContrast": 0,
   "displayProfileAutoSelect": false,
   "displayNameMode": "system",
-  "notificationFocusedMonitor": false
+  "notificationFocusedMonitor": false,
+  "greeterAutoLogin": true
 }
